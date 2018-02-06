@@ -11,6 +11,7 @@ class HomeController < ApplicationController
     sentCaption = params["caption"]
     caption = sentCaption.scan(/.{1,#{10}}/)
 
+
     @resultImage = sentCaption + '.jpg'
     imgPath = './app/assets/images/' + sentCaption + '.jpg'
     img = Magick::ImageList.new('ktTalk.jpg')
@@ -75,7 +76,6 @@ class HomeController < ApplicationController
     @imageURL = 'https://twitter.com/KtRailsApp/status/' + status_id.to_s + '/photo/1'
     # binding.pry
 
-    File.delete imgPath
 
   end
 

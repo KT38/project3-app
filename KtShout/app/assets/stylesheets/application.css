@@ -13,9 +13,3 @@
  *= require_tree .
  *= require_self
  */
-
-h1{
-  text-align: center;
-  font: TanukiMagic;
-  /*color: #ff0000;*/
-}

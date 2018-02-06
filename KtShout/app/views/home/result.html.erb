@@ -1,3 +1,14 @@
 <%= image_tag(@resultImage)%>
 
-<a href="https://twitter.com/intent/tweet?url=<%=@imageURL%>" target="_blank">Tweet</a>
+<!-- <div class="Twitter">
+  <a href="https://twitter.com/intent/tweet?hashtags=<%=URI.escape('全部けーてぃーのせいだ')%>&url=<%=@imageURL%>" target="_blank">Tweet</a>
+</div> -->
+
+<button class="return" type="button"onclick="location.href='http://kt38k.local:3000/home/top'">
+戻る
+</button>
+
+
+<button class="Twitter" type="button"onclick="window.open('https://twitter.com/intent/tweet?hashtags=<%=URI.escape('全部けーてぃーのせいだ')%>&url=<%=@imageURL%>','newwindow','toolbar=no,location=no,status=no,menubar=no,scrollbars=no,width=300,height=300')";>
+Tweet
+</button>
