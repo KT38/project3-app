@@ -1,0 +1,6 @@
+<%= image_tag('KT.png', :class => 'topKT') %>
+
+<%= form_tag('/home/result') do%>
+<%= text_field_tag('caption') %>
+<%= submit_tag('送信', :class => 'send') %>
+<% end %>
